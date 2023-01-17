@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(0, 0, 47);
+  font-family: "Pacifico";
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#gridcontrols {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 40px;
+  margin: 0px 40px;
+  height: 280px;
+  font-size: x-large;
+  background-color: rgba(59, 130, 246, 0.5);
+  border-color: rgb(255, 255, 255);
+  border-width: 8px;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+#slidercontainer,
+#colorpickercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+#slider:hover {
+  opacity: 1;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00ccff;
+  cursor: pointer;
+}
+
+#slidercontainer > label,
+#colorpickercontainer > label {
+  padding-bottom: 4px;
+}
+
+#grid {
+  width: 800px;
+  height: 800px;
+  background-color: grey;
+}

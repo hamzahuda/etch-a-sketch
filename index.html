@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
 
@@ -13,19 +16,24 @@
 </head>
 
 <body>
-  <div class="content">
+  <h1 id="title">Etch A Sketch</h1>
+  <div id="content">
+
     <div id="gridcontrols">
+
       <div id="slidercontainer">
-        <label for="slider">Grid Size: 32</label>
+        <label for="slider">32 ⨉ 32</label>
         <input type="range" min="1" max="100" value="32" id="slider">
       </div>
+
       <div id="colorpickercontainer">
+        <label for="slider">Color</label>
         <input type="color" id="colorpicker" value="#000000">
-        <label for="slider">Grid Size: 32</label>
       </div>
 
-      <div id="grid">
-      </div>
+    </div>
+
+    <div id="grid">
     </div>
 
   </div>
